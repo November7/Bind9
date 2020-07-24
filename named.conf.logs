@@ -1,0 +1,10 @@
+logging {
+	channel stdout {
+		syslog daemon;
+		print-time yes;
+		print-category yes;
+		print-severity yes;
+		severity info;
+	};
+	category queries {stdout;};
+};
